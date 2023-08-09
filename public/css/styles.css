@@ -48,7 +48,7 @@ section{
 .slideshow-container {
   position: relative;
   max-width: 600px;
-  margin: auto;
+  margin: 15px;
   display: flex;
   justify-content: center;
   text-align: center;
