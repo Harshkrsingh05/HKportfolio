@@ -6,11 +6,12 @@
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
   background-color: #282b30!important;
+  width: 100vw !important;
 }
 #navbr{
   position: fixed;
   top: 0px; 
-  width: 100%; 
+  width: 98%; 
   transition: top 0.3s;
   z-index: 99;
   background-color: #000000;
@@ -107,8 +108,10 @@ section{
   display: flex;
 }
 .heading{
-  text-align: center;
-  margin-bottom: 5px;
+  /* text-align: center; */
+  padding-top: 2.5rem;
+  margin-left: 2rem;
+  margin-bottom: 0px;
   font-family: 'Courier New', Courier, monospace; 
 }
 .download{
@@ -162,7 +165,7 @@ section{
 h1 {
   font-size: calc(1.375rem + 1.5vw);
   /* color: antiquewhite; */
-  color: red;
+  color: rgb(0, 0, 0);
 }
 .tech-icons.col-md-2.col-4 {
   color: black;
@@ -181,8 +184,8 @@ h1 {
 }
 .info .wrapper {
   /* display: inline-flex; */
-  width: 60vw;
-  height: 80vw;
+  width: 100%;
+  height: 80%;
   text-align: center;
 }
 .info .wrapper .static-txt{
@@ -194,7 +197,7 @@ h1 {
   margin-top: 8rem;
 }
 .info .wrapper .dynamic-txts {
-  /* margin-left: -2.06rem; */
+  margin-left: -1.06rem;
   height: 5.6rem;
   line-height: 5.6rem;
   overflow: hidden;
@@ -206,7 +209,7 @@ ul.dynamic-txts {
   color:  #FC6D6D;
   list-style: none;
   font-size: 2.75rem;
-  font-weight: 500;
+  font-weight: 400;
   position: relative;
   top: 0;
   animation: slide 12s steps(4) infinite;;
@@ -223,6 +226,7 @@ ul.dynamic-txts {
   content:"";
   position: absolute;
   left: 0;
+  top: 1px;
   height: 116%;
   width: 100%;
   /* background: rgb(62 62 62); */
