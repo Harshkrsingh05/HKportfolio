@@ -34,8 +34,32 @@ function showSlides() {
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 document.addEventListener("DOMContentLoaded", function() {
   showSlides();
 });
+
+
+
+// Function to apply styles based on screen width
+function applyStyles() {
+  const dynamic = document.querySelector('.dynamic');
+  if (window.innerWidth <= 768) { // Mobile screen width
+    dynamic.style.float = 'left';
+    dynamic.style.flexWrap = 'none';
+    dynamic.style.color= '#000';
+    dynamic.style.fontSize= '260%';
+    dynamic.style.fontWeight= '200';
+  } else {
+    dynamic.style.float = 'none';
+    dynamic.style.flexWrap = 'nowrap';
+    dynamic.style.color= '#000';
+    dynamic.style.fontSize= '260%';
+    dynamic.style.fontWeight= '200';
+  }
+}
+function onDOMContentLoaded() {
+  applyStyles();
+window.addEventListener('resize', applyStyles);
+}
+document.addEventListener('DOMContentLoaded', onDOMContentLoaded);
 
