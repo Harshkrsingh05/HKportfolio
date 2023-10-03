@@ -56,10 +56,41 @@ function applyStyles() {
     dynamic.style.fontSize= '260%';
     dynamic.style.fontWeight= '200';
   }
+  const about=document.querySelector('.infobg1');
+  if(window.innerWidth<=768){
+    about.style.display='none';
+  }else{
+    about.style.display='block';
 }
+}
+const webbg = document.querySelector('.Top_container.row');
+
+function updateBackground() {
+  if (window.innerWidth <= 768) {
+    webbg.style.background = `url('css/webbackgroundmb.jpg') no-repeat`;
+    webbg.style.backgroundSize = 'cover';
+    webbg.style.backgroundPosition = 'center right'; // Shifted to the left
+    webbg.style.backgroundAttachment = 'fixed';
+  } else {
+    webbg.style.background = `url('css/webbackground3.jpg') no-repeat`;
+    webbg.style.backgroundSize = 'cover';
+    webbg.style.backgroundPosition = 'center center';
+    webbg.style.backgroundAttachment = 'fixed';
+  }
+}
+
+// Initial update on page load
+
+
+// Update when the window is resized
+
+
 function onDOMContentLoaded() {
   applyStyles();
+  updateBackground();
 window.addEventListener('resize', applyStyles);
+window.addEventListener('resize', updateBackground);
+
 }
 document.addEventListener('DOMContentLoaded', onDOMContentLoaded);
 

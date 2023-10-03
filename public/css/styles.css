@@ -38,15 +38,20 @@ body {
   color: rgb(255 200 53 / 88%)!important;
 }
 section{
-  min-height: 100vh;
+  min-height: max-content;
   width: 100%;
 
   
 }
 .Top_container.row{
-  background: url('webbackground.jpg')no-repeat;
-  background-position: top;
+  background: url('webbackground3.jpg')no-repeat;
+  background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+      
 }
 
 .slideshow-container {
