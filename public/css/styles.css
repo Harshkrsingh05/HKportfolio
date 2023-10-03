@@ -129,6 +129,7 @@ section{
   text-align: center;
 }
 .dlcv{
+  font-family: 'Courier New', Courier, monospace; 
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
