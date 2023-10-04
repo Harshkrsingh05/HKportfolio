@@ -9,7 +9,7 @@
 .Pagestext{
     text-align: center ;
     margin-bottom: 5px;
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
 }
 .pagesImage{
     position: relative;
