@@ -16,9 +16,23 @@
     </ul>
   </footer>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.4.0/dist/TagCloud.min.js"></script>
+<script>
+const texts = [
+    'Harsh', 'Kumar', 'Web Dev',
+    'Developer', 'Animator', '3D',
+    'Harsh', 'Programmer', 'Harsh',
+    'Freelance', 'HARSH',
+];
+
+var tagCloud=TagCloud('.type', texts, {radius:350,maxSpeed:'normal',initSpeed:'fast',direction:135,keep:true});
+var color='#fe014f';
+document.querySelector('.type').style.color = color;
+
+</script>
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script>
-  var typed = new Typed('#type', {
+  var typed = new Typed('.typelg', {
   strings: ['DEVELOPER', 'PROGRAMMER','DESIGNER','FREELANCER'],
   typeSpeed: 50,
   backSpeed: 50,

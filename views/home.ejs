@@ -1,4 +1,14 @@
 <%- include('partials/header'); -%>
+<style>
+@media (max-width: 575.98px) { .wrapper{
+  animation: blink 2s linear infinite;
+}
+@keyframes blink{
+  50%{
+    opacity: 0%;
+  }
+} }
+</style>
 
 <section id="home" class="homec">
   <div class="Top_container row">
@@ -6,16 +16,14 @@
       <div class="wrapper ">
         <div data-aos="fade-up"
         data-aos-anchor-placement="center-bottom" data-aos-duration="3000"class="static-txt">I'm<span style="color: var(--tertiary-color)"><b> Harsh Kumar</b></span>,a
-
       </div>
       <div class="dynamic">
-        <span id="type"></span>
-      
+        <span class="typelg "></span>
       </div>
       </div>
     </div>
     <div class="col-4"></div>
-    
+    <span class="type" style="position: fixed; width: 100vw;height: 100vh;opacity: 30%;"></span>
   </div>
   <!-- <div class="icontainer">
     <div class="row "style=" background-color:#ffffe4">
@@ -42,7 +50,7 @@
       </div>
     </div>
   </div> -->
-  <div class="Middle_container">
+  <div class="Middle_container d-none">
     <!-- <div class="About_me">
       <h1>Let me introduce myself.</h1>
       <p class="Intro">I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
@@ -187,7 +195,7 @@ Whenever possible, I also apply my passion for developing products with Node.js 
         <img src="public/images/pageImg/textplays.png" alt="web" class="image_img">
         <div class="image_overlay">
           <div class="imageTitle">TextPlays</div>
-          <p class="image_desc"> <span><a class="td"href="https://textplays.onrender.com/" target="_blank">Here we have textplays website.</a></span> </p>
+          <p class="image_desc"> <span><a class="td"href="https://github.com/Harshkrsingh05/Textplays" target="_blank">Here we have textplays website.</a></span> </p>
         </div>
       </div>
       <div data-aos="fade-up"
@@ -200,20 +208,20 @@ Whenever possible, I also apply my passion for developing products with Node.js 
       </div>
     </div>
       <div class="row">
-      <div data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="pagesImage col-sm my-2 mx-2">
-        <img src="public/images/pageImg/journal.jpeg" alt="web" class="image_img">
-        <div class="image_overlay">
-          <div class="imageTitle">Daily journal</div>
-          <p class="image_desc"> <span><a class="td" href="https://hkjournal.onrender.com/" target="_blank">Here we have daily journal website.</a></span> </p>
-        </div>
-      </div>
       <div  data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"  class="pagesImage col-sm my-2 mx-2">
         <img src="public/images/pageImg/fitharshcalc.png" alt="web" class="image_img">
         <div class="image_overlay">
           <div class="imageTitle">Fitharsh</div>
           <p class="image_desc"><span><a class="td"href="https://harshkrsingh05.github.io/FitHarsh-Calculator/" target="_blank">Here we have fitharsh website.</a></span> </p>
+        </div>
+      </div>
+      <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="pagesImage col-sm my-2 mx-2">
+        <img src="public/images/pageImg/journal.jpeg" alt="web" class="image_img">
+        <div class="image_overlay">
+          <div class="imageTitle">Daily journal</div>
+          <p class="image_desc"> <span><a class="td" href="https://hkdailyjournal.onrender.com" target="_blank">Here we have daily journal website.</a></span> </p>
         </div>
       </div>
       <div  data-aos="fade-up"

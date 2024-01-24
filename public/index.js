@@ -92,6 +92,10 @@ icon1.onclick=()=>{
 
 // Function to apply styles based on screen width
 function applyStyles() {
+  var static=document.querySelector('.static-txt');
+  var anim=document.querySelector('.typelg');
+  var animsm=document.querySelector('.type');
+
   const dynamic = document.querySelector('.dynamic');
   if (window.innerWidth <= 768) { // Mobile screen width
     dynamic.style.float = 'left';

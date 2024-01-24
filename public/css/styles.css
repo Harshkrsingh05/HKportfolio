@@ -119,7 +119,7 @@ section{
 .Top_container{
   display: flex;
 }
-#type{
+.typelg{
   color: var(--secondary-color);
 }
 .heading{
