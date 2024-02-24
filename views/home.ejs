@@ -1,13 +1,29 @@
 <%- include('partials/header'); -%>
 <style>
 @media (max-width: 575.98px) { .wrapper{
-  animation: blink 2s linear infinite;
+  position: absolute;
+  top: 17rem;
+  left: 1rem;
 }
-@keyframes blink{
-  50%{
-    opacity: 0%;
-  }
-} }
+ }
+ @media (max-width: 575.98px) { .Top_container{
+  padding-bottom: 7rem;
+}
+ }
+ @media (max-width: 575.98px) { .static-txt{
+  color: #f3f3cd!important;
+}
+ }
+ 
+ @media (max-width: 575.98px) { .typelg{
+  color: #F5F5DC;
+  margin-left: 1rem;
+}
+ }
+@media (max-width: 575.98px) { .type{
+  display: none;
+}
+ }
 </style>
 
 <section id="home" class="homec">
@@ -15,15 +31,15 @@
     <div class="info col-8">
       <div class="wrapper ">
         <div data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="3000"class="static-txt">I'm<span style="color: var(--tertiary-color)"><b> Harsh Kumar</b></span>,a
+        data-aos-anchor-placement="center-bottom" data-aos-duration="3000"class="static-txt">I'm<span class="gradient-text" style="color: var(--tertiary-color)"><b> Harsh Kumar</b></span>,a
       </div>
       <div class="dynamic">
         <span class="typelg "></span>
       </div>
       </div>
     </div>
-    <div class="col-4"></div>
-    <span class="type" style="position: fixed; width: 100vw;height: 100vh;opacity: 30%;"></span>
+    <div class="col-4 position-relative"></div>
+    <span class="type d-none" style="position: absolute; width: 100vw;height: 100vh;opacity: 30%;"></span>
   </div>
   <!-- <div class="icontainer">
     <div class="row "style=" background-color:#ffffe4">
@@ -111,7 +127,11 @@ Whenever possible, I also apply my passion for developing products with Node.js 
         data-aos-anchor-placement="center-bottom" class="tech-icons col-md-2 col-4 mx-5 my-3" style="height: 4em; width: 4em;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"/></div>
           <div data-aos="fade-up"
         data-aos-anchor-placement="center-bottom" class="tech-icons col-md-2 col-4 mx-5 my-3"style="height: 4em; width: 4em;" ><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"/></div>
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" class="tech-icons col-md-2 col-4 mx-5 my-3"style="height: 4em; width: 4em;" ><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"/></div>
           <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" class="tech-icons col-md-2 col-4 mx-5 my-3" style="height: 4em; width: 4em;"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain-wordmark.svg"/></div>
+        <div data-aos="fade-up"
         data-aos-anchor-placement="center-bottom" class="tech-icons col-md-2 col-4 mx-5 my-3" style="height: 4em; width: 4em;"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg"/></div>
           <div data-aos="fade-up"
         data-aos-anchor-placement="center-bottom" class="tech-icons col-md-2 col-4 mx-5 my-3" style="height: 4em; width: 4em;"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg"/></div>
@@ -184,10 +204,37 @@ Whenever possible, I also apply my passion for developing products with Node.js 
     <div class="row">
       <div data-aos="fade-up"
         data-aos-anchor-placement="center-bottom" class="pagesImage col-sm my-2 mx-2">
+        <img src="public/images/pageImg/jivanhealth.png" alt="web" class="image_img">
+        <div class="image_overlay">
+          <div class="imageTitle">Jivan-Health</div>
+          <p class="image_desc"> <span><a class="td"href="https://jivan-health.vercel.app" target="_blank">Here we have jivan-health website.</a></span> </p>
+        </div>
+      </div>
+      <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" class="pagesImage col-sm my-2 mx-2">
         <img src="public/images/pageImg/vitrate.png" alt="web" class="image_img">
         <div class="image_overlay">
           <div class="imageTitle">Vitrate</div>
-          <p class="image_desc"> <span><a class="td"href="https://vitrate.onrender.com/" target="_blank">Here we have vitrate website.</a></span> </p>
+          <p class="image_desc"> <span><a class="td"href="https://vitrate.onrender.com/" target="_blank">Here we have vitrate faculty rating website.</a></span> </p>
+        </div>
+      </div>
+      <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="pagesImage col-sm my-2 mx-2">
+        <img src="public/images/pageImg/hectogadgetry.png" alt="web" class="image_img">
+        <div class="image_overlay">
+          <div class="imageTitle">HectoGadgetry</div>
+          <p class="image_desc"> <span><a class="td" href="https://github.com/Harshkrsingh05/Hectogadgetry" target="_blank">Here we have HectoGadgetry Ecommerce website.</a></span> </p>
+        </div>
+      </div>
+      
+    </div>
+      <div class="row">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="pagesImage col-sm my-2 mx-2">
+        <img src="public/images/pageImg/journal.png" alt="web" class="image_img">
+        <div class="image_overlay">
+          <div class="imageTitle">HkLedger</div>
+          <p class="image_desc"> <span><a class="td" href="https://hkjournal.onrender.com/" target="_blank">Here we have HkLedger website.</a></span> </p>
         </div>
       </div>
       <div data-aos="fade-up"
@@ -198,16 +245,17 @@ Whenever possible, I also apply my passion for developing products with Node.js 
           <p class="image_desc"> <span><a class="td"href="https://github.com/Harshkrsingh05/Textplays" target="_blank">Here we have textplays website.</a></span> </p>
         </div>
       </div>
-      <div data-aos="fade-up"
+        <div data-aos="fade-up"
         data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="pagesImage col-sm my-2 mx-2">
         <img src="public/images/pageImg/keepNotes.jpeg" alt="web" class="image_img">
         <div class="image_overlay">
           <div class="imageTitle">Daily keep note</div>
-          <p class="image_desc"> <span><a class="td"href="https://hktodolist.onrender.com/" target="_blank">Here we have note keeping website.</a></span> </p>
+          <p class="image_desc"> <span><a class="td"href="https://github.com/Harshkrsingh05/todo-list" target="_blank">Here we have note keeping website.</a></span> </p>
         </div>
       </div>
-    </div>
-      <div class="row">
+     
+      </div>
+    <div class="row">
       <div  data-aos="fade-up"
         data-aos-anchor-placement="center-bottom"  class="pagesImage col-sm my-2 mx-2">
         <img src="public/images/pageImg/fitharshcalc.png" alt="web" class="image_img">
@@ -216,29 +264,12 @@ Whenever possible, I also apply my passion for developing products with Node.js 
           <p class="image_desc"><span><a class="td"href="https://harshkrsingh05.github.io/FitHarsh-Calculator/" target="_blank">Here we have fitharsh website.</a></span> </p>
         </div>
       </div>
-      <div data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="pagesImage col-sm my-2 mx-2">
-        <img src="public/images/pageImg/journal.jpeg" alt="web" class="image_img">
-        <div class="image_overlay">
-          <div class="imageTitle">Daily journal</div>
-          <p class="image_desc"> <span><a class="td" href="https://hkdailyjournal.onrender.com" target="_blank">Here we have daily journal website.</a></span> </p>
-        </div>
-      </div>
       <div  data-aos="fade-up"
         data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="pagesImage  col-sm my-2 mx-2">
         <img src="public/images/pageImg/drumkit.png" alt="web" class="image_img">
         <div class="image_overlay">
           <div class="imageTitle">Drumkit</div>
           <p class="image_desc"> <span><a class="td"href="https://harshkrsingh05.github.io/Drumset/" target="_blank" >Here we have Drumkit website.</a></span> </p>
-        </div>
-      </div> 
-      </div>
-    <div class="row">
-      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000"  class="pagesImage col-sm my-2 mx-2">
-        <img src="public/images/pageImg/ourmenu.jpeg" alt="web" class="image_img">
-        <div class="image_overlay">
-          <div class="imageTitle">Our menu</div>
-          <p class="image_desc"> <span><a class="td"href="https://harshkrsingh05.github.io/hkmenu/" target="_blank">Here we have Our menu website.</a></span> </p>
         </div>
       </div>
     
@@ -249,15 +280,8 @@ Whenever possible, I also apply my passion for developing products with Node.js 
           <p class="image_desc"> <span><a class="td"href="https://harshkrsingh05.github.io/Simongame/" target="_blank">Here we have Tap Game website.</a></span> </p>
         </div>
       </div>
-      <div  data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000"   class="pagesImage col-sm my-2 mx-2">
-        <img src="public/images/pageImg/lovecalculator.png" alt="web" class="image_img">
-        <div class="image_overlay">
-          <div class="imageTitle">Love Calculator</div>
-          <p class="image_desc"> <span><a class="td"href="https://harshkrsingh05.github.io/Love-calculator/" target="_blank">Here we have love calculator website.</a></span> </p>
-        </div>
-      </div>
     </div>
-  <div id="cv" class="cvbutton"><button type="button"><a class="btn btn-light dlcv" href="https://drive.google.com/file/d/1K6nwxQam3Pv5BS77sRy96A_Nd0khI_jW/view?usp=sharing"target="_blank"><b>Visit CV</b> </a></button> 
+  <div id="cv" class="cvbutton"><button type="button"><a class="btn btn-light dlcv" href="https://drive.google.com/file/d/10ah5iuHKtXKHQOhWG6o5ktV1r14dzyoC/view?usp=sharing"target="_blank"><b>Visit CV</b> </a></button> 
   </div>
   <div id="contact"class="Bottom_container">
     <h1><b>Find me on</b> </h1>

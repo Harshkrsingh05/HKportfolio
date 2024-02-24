@@ -11,7 +11,7 @@
 .dark-theme{
   --primary-color:#21242a;
   --secondary-color:#fe014f;
-  --tertiary-color:white;
+  --tertiary-color:brown;
 }
 .bg-body-tertiary {
   --bs-bg-opacity: 0;
@@ -118,6 +118,16 @@ section{
 } */
 .Top_container{
   display: flex;
+}
+/* var(--tertiary-color) var(--secondary-color) */
+.gradient-text{
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, var(--tertiary-color) , #DFAF37);
+  background-size: 100%;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 }
 .typelg{
   color: var(--secondary-color);
