@@ -1,11 +1,26 @@
 <%- include('partials/header'); -%>
 <style>
-@media (max-width: 575.98px) { .wrapper{
-  position: absolute;
-  top: 17rem;
-  left: 1rem;
+ @media screen and (max-width: 575.98px) {
+  .wrapper {
+    position: absolute;
+    top: 26rem; /* When screen width is below 575.98px */
+    left: 1rem;
+  }
 }
- }
+@media screen and (max-width: 420px) {
+  .wrapper {
+    position: absolute;
+    top: 22rem; /* When screen width is below 420px */
+    left: 1rem;
+  }
+}
+@media screen and (max-width: 325px) {
+  .wrapper {
+    position: absolute;
+    top: 17rem; /* When screen width is below 420px */
+    left: 1rem;
+  }
+}
  @media (max-width: 575.98px) { .Top_container{
   padding-bottom: 7rem;
 }
