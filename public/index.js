@@ -121,15 +121,15 @@ function applyStyles() {
 const webbg = document.querySelector('.Top_container.row');
 function updateBackground() {
   if (window.innerWidth <= 768 && document.body.classList.contains("dark-theme")) {
-    webbg.style.background = `url('css/webbackgroundmbdark.jpg') no-repeat`;
+    webbg.style.background = `url('css/webbackgroundmbdark1.jpg') no-repeat`;
     webbg.style.backgroundSize = 'cover';
-    webbg.style.backgroundPosition = 'center right'; // Shifted to the left
+    webbg.style.backgroundPosition = 'center center'; // Shifted to the left
     webbg.style.backgroundAttachment = 'fixed';
   }
   else if(window.innerWidth <= 768 && !(document.body.classList.contains("dark-theme"))){
-    webbg.style.background = `url('css/webbackgroundmb.jpg') no-repeat`;
+    webbg.style.background = `url('css/webbackgroundmb1.jpg') no-repeat`;
     webbg.style.backgroundSize = 'cover';
-    webbg.style.backgroundPosition = 'center right'; // Shifted to the left
+    webbg.style.backgroundPosition = 'center center'; // Shifted to the left
     webbg.style.backgroundAttachment = 'fixed';
   }
   else if(window.innerWidth >= 768 && (document.body.classList.contains("dark-theme"))){
