@@ -95,7 +95,6 @@ function applyStyles() {
   var static=document.querySelector('.static-txt');
   var anim=document.querySelector('.typelg');
   var animsm=document.querySelector('.type');
-
   const dynamic = document.querySelector('.dynamic');
   if (window.innerWidth <= 768) { // Mobile screen width
     dynamic.style.float = 'left';
@@ -115,6 +114,16 @@ function applyStyles() {
     about.style.display='none';
   }else{
     about.style.display='block';
+  }
+  const textsizeless=document.querySelectorAll('.textsizeless');
+  if(window.innerWidth<=994){
+    textsizeless.forEach(element => {
+      element.classList.remove('fw-medium', 'fs-5');
+    });
+  }else{
+    textsizeless.forEach(element => {
+      element.classList.add('fw-medium', 'fs-5');
+    });
   }
 }
 
