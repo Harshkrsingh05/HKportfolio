@@ -1,3 +1,3 @@
 # HKportfolio
-this is a upgraded version of old portfoliohk.  
+this is collections of my work.  
 you can visit it here: https://harshkportfolio.onrender.com/
