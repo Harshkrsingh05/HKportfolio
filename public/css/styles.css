@@ -26,6 +26,25 @@
   z-index: 99;
 }
 
+/* to right, #232526 0%, #414345  51%, #232526  100% */
+.btn-grad {
+  background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8  51%, #757F9A  100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  /* display: block; */
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
 .navbar-brand {
   color: var(--secondary-color);
 }
@@ -52,7 +71,7 @@ section{
 }
 .Top_container.row{
   background: url('webbackground3.jpg')no-repeat;
-  background-position: center center;
+  background-position: right center;
   background-size: cover;
   background-attachment: fixed;
   /* -webkit-background-size: cover;
@@ -71,7 +90,7 @@ section{
   font-size: 20px;
   z-index: 100;
   text-decoration: none;
-  text-shadow: 0;
+  text-shadow: 1px 1px 2px var(--primary-color);
   width: 13px;
   height: 13px;
   border-bottom: 2px solid transparent;
