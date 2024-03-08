@@ -23,7 +23,9 @@ app.get("/", function(req, res){
 res.render("home",{year:year});
 });
 app.get("/home", function(req, res){
-  res.render("home");
+  const d = new Date();
+  let year = d.getFullYear();
+  res.render("home",{year:year});
 });
 
 app.get("/about", function(req, res){
