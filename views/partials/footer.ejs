@@ -12,6 +12,12 @@
   </footer>
 </div>
 <script>
+  var preloader = document.getElementById('loading');
+  function myFunction(){
+    preloader.style.display="none";
+  }
+</script>
+<script>
   function updateTime() {
       fetch('/time') // Send a request to the server to get the current time
           .then(response => response.text())
