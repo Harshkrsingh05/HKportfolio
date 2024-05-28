@@ -7,7 +7,7 @@
   position: fixed;
   width: 100%;
   height: 100vh;
-  background: #fff url('preloader.gif') no-repeat center;
+  background: #fff url('preloader.svg') no-repeat center;
   z-index: 999;
 }
 :root{
