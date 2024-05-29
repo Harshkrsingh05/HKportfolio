@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   };
 });
 
-
+gsap.to(".otw", {duration: 2,x:50,delay:1,repeat:-1,yoyo:true});
 //for changing light to dark and vice-versa
 var icon=document.getElementById("icon");
 var icon1=document.getElementById("icon1");
