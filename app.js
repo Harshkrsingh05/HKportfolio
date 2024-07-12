@@ -5,10 +5,9 @@ const ejs = require("ejs");
 const app = express();
 app.set('view engine', 'ejs');
 
-
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
-app.use('/public/images/',express.static('./public/images'));
+app.use('/public',express.static('./public'));
 
 app.get("/time", function(req, res){
   const d = new Date();
@@ -27,23 +26,6 @@ app.get("/home", function(req, res){
   let year = d.getFullYear();
   res.render("home",{year:year});
 });
-
-app.get("/about", function(req, res){
-  res.render("#about");
-});
-app.get("/skills", function(req, res){
-  res.render("skills");
-});
-app.get("/pages", function(req, res){
-  res.render("pages");
-});
-app.get("/cv", function(req, res){
-  res.redirect(301,'https://harshkrsingh05.github.io/CV/');
-});
-app.get("/contact", function(req, res){
-  res.redirect(301,'https://harshkrsingh05.github.io/about-me-website/');
-});
-
 
 
 

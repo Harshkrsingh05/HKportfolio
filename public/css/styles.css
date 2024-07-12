@@ -192,6 +192,11 @@ section{
   background-position: right;
   background-size: cover;
 } */
+.hidden-alert {
+  transform: scale(0);
+  opacity: 0;
+}
+
 .Top_container{
   display: flex;
   height: 95vh;

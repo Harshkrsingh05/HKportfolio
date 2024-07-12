@@ -13,7 +13,9 @@
     "body-parser": "^1.20.1",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "gsap": "^3.12.5",
     "TagCloud": "^2.4.0",
-    "typed.js": "^2.0.16"
+    "typed.js": "^2.0.16",
+    "vanilla-tilt": "^1.8.1"
   }
 }

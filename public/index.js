@@ -173,3 +173,23 @@ document.addEventListener('DOMContentLoaded', onDOMContentLoaded);
 icon.addEventListener("click",updateBackground);
 icon1.addEventListener("click",updateBackground);
 
+document.addEventListener("DOMContentLoaded", function() {
+  var alert = document.querySelector('.alert');
+
+  // Debugging: Check if the alert has the correct initial class
+  console.log("Initial class list:", alert.classList);
+
+  // Delay the pop-in animation by 1 second
+  setTimeout(function() {
+      gsap.to(alert, { duration: 0.5, scale: 1, opacity: 1, onStart: function() {
+          alert.classList.remove('hidden-alert');
+      }});
+
+      // Pop-out animation after an additional 3 seconds
+      setTimeout(function() {
+          gsap.to(alert, { duration: 0.5, scale: 0, opacity: 0, onComplete: function() {
+              alert.remove();
+          }});
+      }, 3000); // 3000 milliseconds = 3 seconds
+  }, 1000); // 1000 milliseconds = 1 second
+});
