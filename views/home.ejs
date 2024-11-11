@@ -79,7 +79,7 @@
 }
 </style>
 
-<section id="home" class="homec">
+<section id="home" class="homec" style="height: 100vh;">
   <div class="alert alert-info alert-dismissible hidden-alert" style="position: absolute;top: 55px;right: 10px;" role="alert">
     Check out Dark mode!  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
       <path id="icon-path" d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"></path>
@@ -89,10 +89,11 @@
   <div class="Top_container row">
     <div class="info col-8">
       <div class="wrapper ">
-        <div data-aos="fade-up"
+        <div style="text-shadow: 1px 1px 3px #558ABB;"
+        data-aos="fade-up" 
         data-aos-anchor-placement="center-bottom" data-aos-duration="3000"class="static-txt ">I'm<span class="gradient-text" style="color: var(--tertiary-color);font-family:'anta',sans-serif "><b> Harsh Kumar</b></span>,a
       </div>
-      <div class="dynamic">
+      <div class="dynamic" style="text-shadow: 1px 1px 3px #558ABB;">
         <span class="typelg fw-medium fst-italic"></span>
       </div>
       </div>
@@ -111,48 +112,7 @@
   <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
 </svg></div>
   </div>
-  <!-- <div class="icontainer">
-    <div class="row "style=" background-color:#ffffe4">
-      <div class="slideshow-container col-sm">
-        <div class="slide fade">
-          <img style="height: 256px; width: 276px;" class="homeimg"src="../public/images/homepic3.png" alt="Image 3">
-        </div>
-        <div class="slide fade">
-          <img style="height: 256px; width: 276px;"  class="homeimg"src="../public/images/homepic2.jpg" alt="Image 2">
-        </div>
-        <div class="slide fade">
-          <img style="height: 256px; width: 276px;"  class="homeimg"src="../public/images/infopic1.png" alt="Image 3">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <div class="col-sm intname">
-        <div class="name">
-          <h1><i> Harsh kumar</i></h1>
-          <h6 style="" >Vellore institute of Technology,Chennai</h6>
-          <h6>Electronic and Computer engineering</h6>
-          <h6>2022-26</h6>
-        </div>
-      </div>
-    </div>
-  </div> -->
   <div class="Middle_container d-none">
-    <!-- <div class="About_me">
-      <h1>Let me introduce myself.</h1>
-      <p class="Intro">I fell in love with programming and I have at least learnt something, I think… 🤷‍♂️
-
-I am fluent in classics like C++, Javascript and Python.
-
-My field of Interest's are building new  Web Technologies and Products and also in areas related to Deep Learning and Natural Launguage Processing.
-
-Whenever possible, I also apply my passion for developing products with Node.js and Modern Javascript Library and Frameworks  like React.js and Next.js</p>
-    </div> -->
-    <!-- <div data-aos="flip-left"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000" class="Avatar">
-      <img style="max-height:100%; max-width:100%;" src="public/images/homeavatar.png" alt="HK">
-    </div> -->
-
   </div>
 </section>
 <section id="skills" class="bgwhite">
@@ -305,37 +265,71 @@ Whenever possible, I also apply my passion for developing products with Node.js 
 </section>
 
 <section id="about" class="bgwhite">
-  <div  class="section abt ">
-    <h1 class="heading" style="color: var(--secondary-color);text-align: center; font-family: 'anta', 'Arial Narrow', Arial, sans-serif ; margin-bottom: 2rem;"><strong>About</strong> </h1>
+  <div class="section abt">
+    <h1 class="heading" style="color: var(--secondary-color); text-align: center; font-family: 'anta', 'Arial Narrow', Arial, sans-serif; margin-bottom: 2rem;">
+      <strong>About</strong>
+    </h1>
     <div class="Top_container container">
       <div class="row">
-        <div class="col-sm ">
-          <div class="container infoAbout my-5 " style="z-index: 1;">
-              <div class="textsizeless ">
-  
-              
-            <p id="textt1">Hi Everyone, I am Harsh kumar from Kaimur, Bihar, India.
-            I am pursuing BTech in VIT Chennai.Apart from coding, some other activities that I love to do!
-            <ul id="textt1"><li>Playing Games</li>
-                <li>Watching movies</li> 
-                <li>Travelling</li>
-            </ul>
-            <p id="textt1">You can also call me a designer, developer,UI, UX or by any other market defined function-title. I'm also a multi-disciplinary maker with over 1 years of experiences in wide range of design disciplines, manager, advisor, front-end developer, music enthusiast, traveler, and more.</p>
-            <p id="textt1">Fueled by high energy levels and boundless enthusiasm. I'm passionate, expressive, multi-talented spirit with a natural ability to entertain and inspire. I'm never satisfied to just come up with ideas. Instead I have an almost impulsive need to act on them.</p>  
-          
-          </div>
+        <!-- Text Section -->
+        <div class="col-md-6"> <!-- Adjusted to col-md-6 for side-by-side layout -->
+          <div class="container infoAbout my-5" style="z-index: 1;">
+            <div class="textsizeless">
+              <!-- Shortened text displayed initially -->
+              <p id="textt1">Hi Everyone, I am Harsh kumar from Kaimur, Bihar, India.
+                I am pursuing BTech in VIT Chennai.Apart from coding, some other activities that I love to do!
+                <ul id="textt1"><li>Playing Games</li>
+                    <li>Watching movies</li> 
+                    <li>Travelling</li>
+                </ul>
+                <p id="textt1">You can also call me a designer, developer,UI, UX or by any other market defined function-title. I'm also a multi-disciplinary maker with over 1 years of experiences in wide range of design disciplines, manager, advisor, front-end developer, music enthusiast, traveler,...</p>
+              <!-- Read More Button -->
+              <button type="button" class="mx-2 btn btn-grad" data-bs-toggle="modal" data-bs-target="#aboutModal">Read More</button>
+            </div>
           </div>
         </div>
-        <div data-tilt  data-tilt-max="50" data-tilt-speed="300" data-tilt-perspective="1000" data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" data-aos-duration="1000" style="height: 100%;" class="infobg1 col-sm">
-          <div class=""style="height: 76vh;width: 90%;"><img class="infoimgabout border border-3 border-danger rounded mx-2" style="height:100%;width:100%; object-fit: cover; justify-content: center;align-items: center;" src="../public/images/homepic6.jpeg" alt="aboutImage">
+        
+        <!-- Image Section -->
+        <div class="col-md-6"> <!-- Adjusted to col-md-6 for side-by-side layout -->
+          <div data-tilt data-tilt-max="50" data-tilt-speed="300" data-tilt-perspective="1000" data-aos="fade-up"
+             data-aos-anchor-placement="center-bottom" data-aos-duration="1000" style="height: 100%;" class="infobg1">
+          <div style="height: 76vh; width: 90%;">
+            <img class="infoimgabout border border-3 border-danger rounded mx-2" style="height:100%; width:100%; object-fit: cover; justify-content: center; align-items: center;" 
+                 src="../public/images/homepic6.jpeg" alt="aboutImage">
           </div>
+        </div>
         </div>
       </div>
-  
     </div>
-  </div> 
-  </section>
+  </div>
+
+  <!-- Modal for Full About Text -->
+  <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutModalLabel">About Harsh Kumar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Full content displayed in the modal -->
+          <p>
+            Hi Everyone, I am Harsh Kumar from Kaimur, Bihar, India. I am pursuing BTech in VIT Chennai. Apart from coding, some other activities that I love to do!
+            <ul>
+              <li>Playing Games</li>
+              <li>Watching movies</li>
+              <li>Travelling</li>
+            </ul>
+            You can also call me a designer, developer, UI, UX, or by any other market-defined function-title. I'm also a multi-disciplinary maker with over 1 year of experience in a wide range of design disciplines, manager, advisor, front-end developer, music enthusiast, traveler, and more. Fueled by high energy levels and boundless enthusiasm. I'm passionate, expressive, multi-talented spirit with a natural ability to entertain and inspire. I'm never satisfied to just come up with ideas. Instead, I have an almost impulsive need to act on them.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   
   <section id="pages" class="bgwhite">
     <div id="cv" class="cvbutton "><button class="btn-grad" type="button"><a class="btn dlcv" href="https://drive.google.com/file/d/10ah5iuHKtXKHQOhWG6o5ktV1r14dzyoC/view?usp=sharing"target="_blank"><b>Visit CV</b> </a></button> 

@@ -14,8 +14,8 @@
   --primary-color:#f0f5ff;
   --secondary-color:#1e2241;
   --tertiary-color:#fe014f;
-  --fourth-color:#4b0f54;
-  --fifth-color:#895999;
+  --fourth-color:rgb(36, 36, 223);
+  --fifth-color:rgb(144, 141, 141);
 
 }
 .dark-theme{
@@ -71,7 +71,14 @@
   color: var(--secondary-color);
 }
 .nav-link:hover{
-  color: var(--tertiary-color)!important;
+  text-shadow: 2px 2px 8px var(--fourth-color);
+  /* background-color: #f3ec78; */
+  background-image: linear-gradient(45deg, var(--tertiary-color) , var(--fifth-color));
+  background-size: 100%;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 }
 body {
   background-color: #282b30;
@@ -82,10 +89,11 @@ section{
   width: 100%;
 }
 .Top_container.row{
-  background: url('webbackground3.jpg')no-repeat;
+  background: url('whitebg.jpg')no-repeat;
   background-position: right center;
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; */
