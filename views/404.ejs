@@ -1,0 +1,55 @@
+
+<style>
+    .frem{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../public/images/gif.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frem p{
+    position: absolute;
+    top: 0rem;
+    font-size: 7rem;
+    color: #00000063;
+}
+.frem h2{
+    position: absolute;
+    bottom: 8rem;
+    font-size: 34px;
+}
+.frem h5{
+    padding: 4px;
+    position: absolute;
+    bottom: 4rem;
+    color: black;
+}
+.frem a{
+    position: absolute;
+    bottom: 1rem;
+    background: linear-gradient(45deg, #ff0034, #ffbc00);
+    padding: 6px;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    border-radius: 13px;
+}
+#navbr {
+    display: none;
+}
+</style>
+<%- include('partials/header'); -%>
+
+    <div class="frem">
+        <p>404</p>
+        <!-- <h2>Look like you're lost</h2> -->
+        <h5>The page you are looking for not available</h5>
+        <a href="/">Go to Home</a>
+    </div>
+<%- include('partials/footer'); -%>

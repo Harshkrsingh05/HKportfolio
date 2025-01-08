@@ -27,6 +27,11 @@ app.get("/home", function(req, res){
   res.render("home",{year:year});
 });
 
+app.use((req,res)=>{
+  const d = new Date();
+  let year = d.getFullYear();
+  res.status(404).render("404",{pageTitle: '404 - Page Not Found',year:year});
+});
 
 
 app.listen(3000, function(){
