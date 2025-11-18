@@ -4,7 +4,11 @@
   "description": "personal portfolio and collection of all website.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "author": "Harsh kumar singh",
   "license": "ISC",
@@ -14,6 +18,7 @@
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "gsap": "^3.12.5",
+    "react-fast-marquee": "^1.6.5",
     "TagCloud": "^2.4.0",
     "typed.js": "^2.0.16",
     "vanilla-tilt": "^1.8.1"
